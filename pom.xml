@@ -45,7 +45,7 @@
     <dependency>
       <groupId>com.igt.interactive.skbJet.componentManchester.standardIW</groupId>
       <artifactId>standardIW</artifactId>
-      <version>3.2.10-SNAPSHOT</version>
+      <version>3.2.12</version>
       <classifier>dist</classifier>
       <type>zip</type>
     </dependency>
