@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.igt.interactive.skbJet.buildInfrastructure</groupId>
     <artifactId>jetIWGame</artifactId>
-    <version>2.0.3</version>
+    <version>2.0.11</version>
   </parent>
   <artifactId>DownhillCashNoWinAll</artifactId>
   <version>1.0</version>
@@ -13,6 +13,7 @@
   <properties>
     <studio.name>interactive</studio.name>
     <familyID>2196</familyID>
+    <jetDependencyHelperVersion>1.0.31</jetDependencyHelperVersion>
     <apiKey>l7xx91c3da03c9f2495b8212f63c2a76b23d</apiKey>
   </properties>
   <repositories>
@@ -38,7 +39,14 @@
     <dependency>
       <groupId>com.igt.interactive.skbJet.buildInfrastructure.crdc</groupId>
       <artifactId>IWDependencyHelper</artifactId>
-      <version>1.0.23</version>
+      <version>${jetDependencyHelperVersion}</version>
+      <classifier>dist</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.igt.interactive.skbJet.buildInfrastructure</groupId>
+      <artifactId>jetIWGameGruntHelper</artifactId>
+      <version>1.0.2-SNAPSHOT</version>
       <classifier>dist</classifier>
       <type>zip</type>
     </dependency>
@@ -46,6 +54,13 @@
       <groupId>com.igt.interactive.skbJet.componentManchester.standardIW</groupId>
       <artifactId>standardIW</artifactId>
       <version>3.2.12</version>
+      <classifier>dist</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.igt.interactive.skbJet.component.SKBeInstant</groupId>
+      <artifactId>SKBeInstant</artifactId>
+      <version>2.2.15</version>
       <classifier>dist</classifier>
       <type>zip</type>
     </dependency>
